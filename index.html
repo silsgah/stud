@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8" />
+        <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+        <link href="styles/main.css" rel="stylesheet" />
+		<link href="styles/bootstrap.min.css" rel="stylesheet" />
+        <script src="cordova.js"></script>
+    </head>
+    <body>
+        <!--Home-->
+		 
+        
+        <div id="tabstrip-home" data-role="view"  data-title="RECYCLEGH APP">
+             
+            <div data-role="content" class="view-content">
+			<div class="container">
+			   <div class="media">
+				 <a href="#" class="pull-left">
+                 <img src="styles/logo.png" width="" height="" alt>
+                </a>
+				<div class="media-body">
+					<div class="media-heading">
+                       <h1>RECYCLEGH APP<h1>
+					</div> 
+                    </div>
+                </div>
+                <!--
+				<a data-role="button" data-rel="actionsheet" href="#learnmore-actions">Learn More</a>
+                <ul data-role="actionsheet" id="learnmore-actions" data-popup='{"direction": "left"}'>
+                <li><a href="#tabstrip-mainstart" data-action="reply">Go To Learning Center</a></li>
+				
+                <li><a href="#" data-action="reply">Visit Website</a></li>
+            </ul>
+               --> 
+            </div>
+			</div>
+        </div>
+		<!--MainView-->
+           <div id="tabstrip-mainstart" 
+             data-role="view"  
+             data-title="RECYCLEGH APP" >
+             
+            <div data-role="content" class="view-content">
+               <div data-role="navbar" id="edit-navbar">
+			   
+              <a data-role="backbutton" href="#tabstrip-home" data-icon="home" id="back" data-align="left">Home</a>
+             </div>
+
+
+			 <!--
+			 <div id="personFields">
+			 <ul data-role="listview" id="announcements-listview" 
+						data-style="inset"  data-template="announcement-listview-template" data-bind="source: announcements">
+			 </ul>
+			 </div>
+			 -->
+			 
+	      <ul data-role="listview" data-style="inset" data-type="group">
+
+         
+         <li>
+		    <ul>
+			<li><a class="button selected-button" data-role="button" href="#tabstrip-login"><img src="styles/logo.png" width="20" height="20" alt>
+                HISTORY & STATISTICS
+
+			   </a></li>
+              
+			</ul>
+		    
+        </li>
+        
+        </li>
+		 <li>
+            
+             <ul>
+                <li><a class="button selected-button" data-role="button" href="#tabstrip-login"><img src="styles/logo.png" width="20" height="20" alt>EXPERT ADVICE</a></li>
+               
+                
+            </ul>
+        </li>
+        <li>
+            
+             <ul>
+                <li><a class="button selected-button" data-role="button" href="#tabstrip-login"><img src="styles/logo.png" width="20" height="20" alt>RECYCLABLE</a></li>
+               
+                
+            </ul>
+        </li>
+        <li>
+            
+            <ul>
+                <li><a class="button selected-button" data-role="button" href="#tabstrip-login"><img src="styles/logo.png" width="20" height="20" alt>GALLERY</a></li>
+               
+            </ul>
+        </li>
+        <li>
+            
+            <ul>
+                 <li><a class="button selected-button" data-role="button" href="#tabstrip-login"><img src="styles/logo.png" width="20" height="20" alt>CHECK CENTERS</a></li>
+               
+            </ul>
+        </li>
+		<li>
+            
+            <ul>
+                <li><a class="button selected-button" data-role="button" href="#tabstrip-login"><img src="styles/logo.png" width="20" height="20" alt>CONTACTS</a></li>
+            </ul>
+        </li>
+    </ul>
+                
+            </div>
+
+        </div>
+        <!--Login-->
+        <div id="tabstrip-login" 
+             data-role="view"  
+             data-title="RECYCLEGH APP">
+
+            <div data-role="content" class="view-content">
+               <div data-role="navbar" id="edit-navbar">
+              <a data-role="backbutton" id="back" data-align="left">Back</a>
+             </div>
+		     
+                <ul id ="itemslist" ></ul>
+            </div>
+
+        </div>
+       
+        <div data-role="layout" data-id="tabstrip-layout" >
+
+            <!--Header-->
+            <div data-role="header" class="nav-button" >
+                <div data-role="navbar">
+                    <span data-role="view-title"></span>
+                </div>
+            </div>
+
+            <!--Footer-->
+            <div data-role="footer">
+                <div data-role="tabstrip">
+                    <a href="#tabstrip-mainstart" data-icon="home">Recycling Directionary</a>
+                    <a href="#tabstrip-login" data-icon="contacts">News & Lifestyle</a>
+                    
+                </div>
+            </div>
+        </div>
+		<script type="text/x-kendo-template" id="announcement-listview-template">
+		     <div class="media">
+			    
+				 <img src= ${data.url}>
+               
+				   <div class="media-body">
+					<div class="media-heading">
+					  <h3 class="item-title">${data.title}</h3>
+                       
+					</div> 
+                   <p class="item-info">${data.description}</p>
+                    </div>
+              </div>
+			
+			
+			
+		</script>
+		<script type="text/x-kendo-template" id="template">
+				<a href="/" > ${data.Country1}</a>
+        </script> 
+		 <style scoped>
+      .headingimage {
+	  display: block;
+      margin: 1em;
+	  height: 150px;
+	  background: url(styles/logo.png) no-repeat center center;
+        }
+	  
+
+</style>
+		<script src="kendo/js/jquery.min.js"></script>
+        <script src="kendo/js/kendo.mobile.min.js"></script>
+        <script src="scripts/app.js"></script>
+    </body>
+</html>
+        
