@@ -1,0 +1,15 @@
+.km-flat .km-view .km-navbar {
+    background-color: rgb(140, 199, 0);
+}
+.km-flat .km-view .km-tabstrip .km-button.km-state-active {
+    background-color: rgb(140, 199, 0);
+}
+.km-flat .km-view .km-content .km-list .km-state-active .km-listview-link {
+    background-color: rgb(140, 199, 0);
+}
+.km-flat .km-view .km-content {
+    background-color: rgb(255, 255, 255);
+}
+.km-flat .km-view .km-content .km-list > li {
+    background-color: rgb(140, 199, 0);
+}

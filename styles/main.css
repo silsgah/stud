@@ -51,7 +51,7 @@ input[type="text"], input[type="password"] {
 
 /* Navigation */
 .km-footer .km-tabstrip {
-    background: #D88E2E;
+    background: #33DD33;
     background: -moz-linear-gradient(top,  #e0a558 0%, #e0a558 50%, #d88e2e 50%, #d88e2e 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e0a558), color-stop(50%,#e0a558), color-stop(50%,#d88e2e), color-stop(100%,#d88e2e));
     background: -webkit-linear-gradient(top,  #e0a558 0%,#e0a558 50%,#d88e2e 50%,#d88e2e 100%);
