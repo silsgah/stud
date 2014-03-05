@@ -16,17 +16,23 @@
         <div id="tabstrip-home" data-role="view"  data-title="RECYCLEGH APP">
              
             <div data-role="content" class="view-content">
-			<div class="container">
-			   <div class="media">
+			 <div class="container">
+             <br />
+              <div class="headingimage">
+              
+              </div>
+            
+			   <!--<div class="media">
 				 <a href="#" class="pull-left">
-                 <img src="styles/logo.png" width="" height="" alt=""/>
+                 
                 </a>
 				<div class="media-body">
 					<div class="media-heading">
-                       <h1>RECYCLEGH APP<h1>
+                      
 					</div> 
                     </div>
-                </div>
+                </div>-->
+                
                 <!--
 				<a data-role="button" data-rel="actionsheet" href="#learnmore-actions">Learn More</a>
                 <ul data-role="actionsheet" id="learnmore-actions" data-popup='{"direction": "left"}'>
@@ -35,7 +41,7 @@
                 <li><a href="#" data-action="reply">Visit Website</a></li>
             </ul>
                --> 
-            </div>
+             </div>
 			</div>
         </div>
 		<!--MainView-->
@@ -44,6 +50,7 @@
              data-title="RECYCLEGH APP" >
              
             <div data-role="content" class="view-content">
+            <br />
                <div data-role="navbar" id="edit-navbar">
 			   
               <a data-role="backbutton" href="#tabstrip-home" data-icon="home" id="back" data-align="left">Home</a>
@@ -133,6 +140,7 @@
              data-title="RECYCLEGH APP">
 
             <div data-role="content" class="view-content">
+             <br />
                <div data-role="navbar" id="edit-back">
                  <a data-role="backbutton" id="A1" data-align="left">Back</a>
              </div>
@@ -218,15 +226,13 @@
         <style scoped>
             .headingimage
             {
-                display: block;
-                margin: 1em;
-                height: 150px;
-                background: url(styles/logo.png) no-repeat center center;
+                background-image: url(styles/logo.png);
+                background-repeat: no-repeat;
+                text-align: center;
+                width: 600px;
+                height: 203px;
+                margin: 0px auto;
             }
-            .km-flat .km-switch-background
-           {
-             color: #369;
-           }
         </style>
 		<script src="kendo/js/jquery.min.js"></script>
         <script src="kendo/js/kendo.mobile.min.js"></script>
